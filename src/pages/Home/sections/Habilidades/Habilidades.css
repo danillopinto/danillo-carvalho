@@ -1,0 +1,37 @@
+
+.titleHabilidades {
+    margin-left: 10px;
+}
+
+.SpanHabilidades {
+    background-color: rgb(0, 173, 111);
+    width: 99%;
+    height: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 15px;
+}
+
+.liNome {
+    width: 50%;
+}
+
+.NomeePorcentagem {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+}
+
+.liPorcentagem {
+    text-align: end;
+    list-style: none;
+    width: 50%;
+}
+
+.liNomes {
+    color: rgb(0, 173, 111);
+    font-weight: 600;
+    list-style: none;
+    width: 50%;
+}

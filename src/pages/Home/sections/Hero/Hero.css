@@ -1,0 +1,127 @@
+
+
+@media (min-width: 900px) {
+    #Img {
+        position: absolute;
+        top: -60px;
+    }
+  }
+
+.RedesSociais {
+    padding: 7px;
+    background-color: rgb(22, 22, 22);
+    margin: 10px 5px;
+    border-radius: 5px;
+    display: flex;
+    transition: .4s;
+  }
+
+.RedesSociais:hover {
+    color: rgb(0, 173, 111);
+    transition: .4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*_________________________________*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IM Fell English', serif;
+  background-image: repeating-linear-gradient(60deg, #000 0px, #222 2px, #000 4px);
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  text-shadow: 0px 0px 10px rgb(0, 173, 111);
+}
+
+@keyframes restart {
+  to { color: #fff; }
+}
+
+.typing {
+  font-size: 48px;
+  text-align: center;
+  
+  &::before {
+    content: '';
+    animation: text 3s 1s step-end forwards;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    translate: -0.2em;
+    animation: chars 8s 0.5s step-end  3600;
+  }
+}
+
+@keyframes text {
+  0%  { content: 'D '; }
+  5%  { content: 'De '; }
+  9%  { content: 'Des '; }
+  14%  { content: 'Dese '; }
+  18%  { content: 'Desen '; }
+  23%  { content: 'Desenv '; }
+  28%  { content: 'Desenvo '; }
+  32%  { content: 'Desenvol '; }
+  37%  { content: 'Desenvolv '; }
+  42%  { content: 'Desenvolve '; }
+  46%  { content: 'Desenvolved '; }
+  50%  { content: 'Desenvolvedo '; }
+  55%  { content: 'Desenvolvedor '; }
+  60%  { content: 'Desenvolvedor d '; }
+  65%  { content: 'Desenvolvedor de '; }
+  70%  { content: 'Desenvolvedor de s '; }
+  75%  { content: 'Desenvolvedor de so '; }
+  80%  { content: 'Desenvolvedor de sof '; }
+  84%  { content: 'Desenvolvedor de soft '; }
+  88%  { content: 'Desenvolvedor de softw '; }
+  92%  { content: 'Desenvolvedor de softwa '; }
+  96%  { content: 'Desenvolvedor de softwar '; }
+  100%  { content: 'Desenvolvedor de software '; }
+}
+
+@keyframes chars {
+  0%  { content: '|'; }
+  5%  { content: ' '; }
+  9%  { content: '|'; }
+  14%  { content: ' '; }
+  18%  { content: '|'; }
+  23%  { content: ' '; }
+  28%  { content: '|'; }
+  32%  { content: ''; }
+  37%  { content: '|'; }
+  42%  { content: ''; }
+  46%  { content: '|'; }
+  50%  { content: ''; }
+  55%  { content: '|'; }
+  60%  { content: ''; }
+  65%  { content: '|'; }
+  70%  { content: ''; }
+  75%  { content: '|'; }
+  80%  { content: ''; }
+  84%  { content: '|'; }
+  88%  { content: ''; }
+  92%  { content: '|'; }
+  96%  { content: ''; }
+  100%  { content: '|'; }
+}

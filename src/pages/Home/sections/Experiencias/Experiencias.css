@@ -1,0 +1,67 @@
+#titleExper {
+    font-size: 24px;
+    color: rgb(0, 173, 111);
+}
+
+#titleh2Experiencias {
+    background-color: rgb(14, 14, 14);
+    padding: 40px 0 20px 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.experiencias {
+    width: 100%;
+    border: 1px solid rgb(0, 173, 111);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#DivExperiencias {
+    padding: 0 5%;
+}
+
+.h3Experiencias {
+    color: rgb(0, 173, 111);
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.divAbaixoExperiencia {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.LinkedinExperiencias {
+    width: 40%;
+    text-align: end;
+    color: rgb(0, 173, 111);
+    text-decoration: none;
+}
+
+.DatasExperiencias {
+    width: 60%;
+}
+
+@media (min-width: 900px) {
+
+    #titleh2Experiencias {
+        padding-bottom: 50px;
+        font-size: 28px;
+    }
+
+    #titleExper {
+        font-size: 28px;
+    }
+
+    #DivExperiencias {
+        padding: 0 17%;
+    }
+    
+
+}

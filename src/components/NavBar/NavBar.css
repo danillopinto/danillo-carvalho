@@ -1,0 +1,38 @@
+.LinksNavBar {
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: white; /* Cor do texto */
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    
+  }
+
+    /* Estilo do sublinhado */
+    .LinksNavBar::after {
+    content: ''; /* Cria um elemento pseudo */
+    position: absolute; /* Posiciona em relação ao link */
+    width: 0%; /* Largura total */
+    height: 1px; /* Altura do sublinhado */
+    bottom: 0; /* Alinha na parte inferior do link */
+    left: 0; /* Começa do canto esquerdo */
+    background-color: rgb(0, 173, 111); /* Cor do sublinhado inicial */
+    transition: all 0.3s ease; /* Transição suave de 0.3 segundos */
+  }
+
+   /* Efeito ao passar o mouse */
+   .LinksNavBar:hover::after {
+    width: 100%;
+  }
+
+  @media (min-width: 800px) {
+    #burguer {
+      display: none;
+    }
+    .LinksNavBar {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 799px) {
+    .LinksNavBar {
+      display: none;
+    }
+  }
