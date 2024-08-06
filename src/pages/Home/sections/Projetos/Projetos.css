@@ -6,7 +6,7 @@
 .DivProjetos {
     border-radius: 10px;
     transition: 0.4s;
-    padding: 4%;
+    padding: 3%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     border: 1px solid rgb(0, 173, 111);
     padding: 5px;
     border-radius: 10px;
-    color: rgb(0, 173, 111);
+    color: #00ad6f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +48,19 @@
     width: 180px;
     margin-bottom: 15px;
     margin-top: -25px;
+}
+
+.energia-solaris {
+    width: 150px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+}
+
+.myPortifolio {
+    width: 180px;
+    margin-bottom: 15px;
+    margin-top: -25px;
+    margin-left: -30px;
 }
 
 .Logos {

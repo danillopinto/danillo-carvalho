@@ -2,10 +2,12 @@ import "../Projetos/Projetos.css"
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import LogoMagazine from "../../../assets/images/magazine-colchoes.png"
 import LogoSejaMais from "../../../assets/images/seja-mais.webp"
+import LogoSolaris from "../../../assets/images/logo.solaris.png"
+import myPortifolio from "../../../assets/images/animacao.svg"
 import styled from "styled-components";
 const Projetos = () => {
 
-    const StyledProjetos = styled("div")(() => ({
+    const StyledProjetos = styled("div")(() => ({   
 
         backgroundColor: "rgb(14, 14, 14)",
         paddingBottom: "50px",
@@ -46,12 +48,13 @@ const Projetos = () => {
 
                     <div className="DivProjetos">
 
-                        <div className="Logos">JavaScript</div>
+                        <img className="energia-solaris" src={LogoSolaris} />
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur enim saepe libero in sequi mollitia placeat!
+                        Solaris energia é um sistema avançado de cálculo de economia com energia solar que permite estimar com precisão o impacto financeiro
+                        da instalação de sistemas solares.
                         <br /> <br />
 
-                        <a href="#" target="_blank" className="LinkProjetos"> <OpenInNewIcon />embreve.com</a>
+                        <a href="https://solaris-energia.vercel.app" target="_blank" className="LinkProjetos"><OpenInNewIcon />solaris-energia.vercel.app</a>
 
                     </div>
 
@@ -61,12 +64,12 @@ const Projetos = () => {
 
                     <div className="DivProjetos" id="DivProjetos">
 
-                        <div className="Logos">HTML</div>
+                        <img className="myPortifolio" src={myPortifolio} />
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur enim saepe libero in sequi mollitia placeat!
+                        Projeto criado para apresentar meus trabalhos e habilidades aos visitantes interessados em conhecer mais sobre mim.
                         <br /> <br />
 
-                        <a href="#" target="_blank" className="LinkProjetos"> <OpenInNewIcon />embreve.com</a>
+                        <a href="https://danillo-carvalho.vercel.app" target="_blank" className="LinkProjetos"> <OpenInNewIcon />danillo-carvalho.vercel.app</a>
 
                     </div>
 
