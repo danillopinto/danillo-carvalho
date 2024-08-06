@@ -5,6 +5,19 @@
         position: absolute;
         top: -60px;
     }
+
+    .typing {
+      font-size: 48px;
+    }
+  }
+
+  @media (max-width: 899px) {
+
+    .typing {
+      font-size: 26px;
+    }
+
+
   }
 
 .RedesSociais {
@@ -57,7 +70,6 @@ body {
 }
 
 .typing {
-  font-size: 48px;
   text-align: center;
   
   &::before {

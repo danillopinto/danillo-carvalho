@@ -1,7 +1,8 @@
+
 #titleh2FaleComigo {
     background-color: rgb(10, 10, 10);
-    padding: 40px 0 20px 0;
-    margin: 0 0 50px 0;
+    padding: 20px 0 20px 0;
+    margin: 0 0 20px 0;
     color: white;
     display: flex;
     justify-content: center;
@@ -68,7 +69,7 @@ li {
     width: 60px;
     height: 60px;
     transition: .4s;
-}  
+}
 
 #WhatsApp:hover {
     width: 70px;
@@ -80,7 +81,67 @@ a {
     color: white;
 }
 
-@media (min-width: 800px) {
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    background-color: rgb(14, 14, 14);
+    border: 1px solid rgb(0, 173, 111);
+    padding: 8px;
+    margin-bottom: 20px;
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s; 
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border: 1px solid rgb(0, 173, 111);
+    outline: 0;
+    box-shadow: 0px 0px 7px rgb(0, 173, 111);
+
+    background-color: rgb(14, 14, 14);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+form button {
+    background-color: rgb(14, 14, 14);
+    border: 1px solid rgb(0, 173, 111);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    width: 100%;
+}
+
+form button:hover {
+    box-shadow: 0px 0px 7px rgb(0, 173, 111);
+    transition: .3s;
+}
+
+#message {
+    padding: 8px 8px 200px 8px;
+}
+
+#InputSuaMensagem::placeholder {
+    position: absolute;
+    top: 8px;
+}
+
+
+@media (min-width: 800px) { /*DESKTOP*/
 
     #WhatsApp {
         right: 2%;
@@ -89,10 +150,12 @@ a {
 }
 
 
-@media (max-width: 799px) {
+@media (max-width: 799px) { /*MOBILE*/
     #WhatsApp {
         right: 5%;
     }
+
+    
 
 }
 
@@ -101,4 +164,24 @@ a {
     color: white;
     padding: 10px 0;
     text-align: center;
+}
+
+
+/* Estilo para as mensagens de erro */
+.error {
+    color: #E64A19; /* Laranja avermelhado para destacar os erros */
+    font-size: 0.875rem; /* Tamanho da fonte menor */
+    margin: 0px 5px; /* Espaçamento superior e inferior */
+}
+
+/* Estilo para os campos do formulário com erro */
+input.error {
+    border-color: #E64A19; /* Borda vermelha para indicar erro */
+    background-color: rgb(14, 14, 14);
+}
+
+/* Estilo para os campos do formulário válidos */
+input.valid {
+    border-color: #4CAF50; /* Verde para campos válidos */
+    background-color: rgb(14, 14, 14);
 }
