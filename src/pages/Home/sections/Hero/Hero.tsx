@@ -56,7 +56,7 @@ const Hero = () => {
                                     <AnimatedBackground />
                                 </Box>
 
-                                <Box position="relative" textAlign="center" marginTop="80px">
+                                <Box position="relative" textAlign="center">
                                     <div id="Img"><StyledImg src={Avatar} /></div>
 
                                 </Box>
