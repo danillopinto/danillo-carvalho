@@ -4,6 +4,7 @@ import LogoMagazine from "../../../assets/images/magazine-colchoes.png"
 import LogoSejaMais from "../../../assets/images/seja-mais.webp"
 import LogoSolaris from "../../../assets/images/logo.solaris.png"
 import myPortifolio from "../../../assets/images/animacao.svg"
+import finances from "../../../assets/images/finances.svg"
 import styled from "styled-components";
 const Projetos = () => {
 
@@ -75,12 +76,13 @@ const Projetos = () => {
 
                     <div className="DivProjetos">
 
-                        <div className="Logos">CSS</div>
+                         <img className="finances" src={finances} />
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur enim saepe libero in sequi mollitia placeat!
+                         O Sistema de Controle Financeiro é uma solução intuitiva e eficiente para gerenciar suas finanças pessoais.
+    
                         <br /> <br />
 
-                        <a href="#" target="_blank" className="LinkProjetos"> <OpenInNewIcon />embreve.com</a>
+                        <a href="https://controle-financeiro-taupe-mu.vercel.app/" target="_blank" className="LinkProjetos"> <OpenInNewIcon />controle-financeiro.vercel.app/</a>
 
 
                     </div>

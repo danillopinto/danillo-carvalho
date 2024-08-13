@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 600px;
 }
 
 .DivProjetos:hover {
@@ -59,6 +60,13 @@
 .myPortifolio {
     width: 180px;
     margin-bottom: 15px;
+    margin-top: -25px;
+    margin-left: -30px;
+}
+
+.finances {
+    width: 150px;
+    margin-bottom: 10px;
     margin-top: -25px;
     margin-left: -30px;
 }
