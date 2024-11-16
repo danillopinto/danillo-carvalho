@@ -5,10 +5,12 @@ import LogoSejaMais from "../../../assets/images/seja-mais.webp"
 import LogoSolaris from "../../../assets/images/logo.solaris.png"
 import myPortifolio from "../../../assets/images/animacao.svg"
 import finances from "../../../assets/images/finances.svg"
+import bsMalharia from "../../../assets/images/LOGO_BS_MALHARIA-1-removebg-preview-1.png"
+
 import styled from "styled-components";
 const Projetos = () => {
 
-    const StyledProjetos = styled("div")(() => ({   
+    const StyledProjetos = styled("div")(() => ({
 
         backgroundColor: "rgb(14, 14, 14)",
         paddingBottom: "50px",
@@ -29,8 +31,7 @@ const Projetos = () => {
                         <img className="LogoMagazine" src={LogoMagazine} />
 
 
-                        Magazine Colchões é um e-commerce robusto e seguro, que oferece uma experiência de compra intuitiva e funcionalidades
-                        avançadas como catálogo dinâmico, pagamentos seguros e suporte ao cliente.
+                        Magazine Colchões é um e-commerce seguro e intuitivo, com catálogo dinâmico, pagamentos seguros e suporte ao cliente.
                         <br /> <br />
                         <a href="https://magazinecolchoes.com/" target="_blank" className="LinkProjetos"> <OpenInNewIcon /> magazinecolchoes.com</a>
 
@@ -76,10 +77,10 @@ const Projetos = () => {
 
                     <div className="DivProjetos">
 
-                         <img className="finances" src={finances} />
+                        <img className="finances" src={finances} />
 
-                         O Sistema de Controle Financeiro é uma solução intuitiva e eficiente para gerenciar suas finanças pessoais.
-    
+                        O Sistema de Controle Financeiro é uma solução intuitiva e eficiente para gerenciar suas finanças pessoais.
+
                         <br /> <br />
 
                         <a href="https://controle-financeiro-taupe-mu.vercel.app/" target="_blank" className="LinkProjetos"> <OpenInNewIcon />controle-financeiro.vercel.app/</a>
@@ -89,12 +90,13 @@ const Projetos = () => {
 
                     <div className="DivProjetos">
 
-                        <div className="Logos">React</div>
+                        <img className="bsMalharia" src={bsMalharia} />
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aspernatur enim saepe libero in sequi mollitia placeat!
+                        Bs Malharia é um e-commerce especializado em malharia no geral, oferecendo uma experiência de compra simples,
+                        segura e eficiente.
                         <br /> <br />
 
-                        <a href="#" target="_blank" className="LinkProjetos"> <OpenInNewIcon />embreve.com</a>
+                        <a href="https://bsmalharia.com.br/" target="_blank" className="LinkProjetos"> <OpenInNewIcon />bsmalharia.com.br</a>
 
                     </div>
 

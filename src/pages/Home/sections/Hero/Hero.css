@@ -56,7 +56,7 @@ html {
 
 body {
   font-family: 'IM Fell English', serif;
-  background-image: repeating-linear-gradient(60deg, #000 0px, #222 2px, #000 4px);
+  background-image: repeating-linear-gradient(60deg, #222 0px, #222 2px, #222 4px);
   color: #fff;
   min-height: 100vh;
   display: grid;

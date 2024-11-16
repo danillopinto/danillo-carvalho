@@ -6,7 +6,7 @@
 .DivProjetos {
     border-radius: 10px;
     transition: 0.4s;
-    padding: 3%;
+    padding: 20px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     transition: .4s;
-
+    bottom: 10px;
 }
 
 .LinkProjetos:hover {
@@ -52,7 +52,7 @@
 }
 
 .energia-solaris {
-    width: 150px;
+    width: 140px;
     margin-bottom: 15px;
     margin-top: -25px;
 }
@@ -66,6 +66,13 @@
 
 .finances {
     width: 150px;
+    margin-bottom: 10px;
+    margin-top: -25px;
+    margin-left: -30px;
+}
+
+.bsMalharia {
+    width: 200px;
     margin-bottom: 10px;
     margin-top: -25px;
     margin-left: -30px;

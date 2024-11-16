@@ -6,6 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { enqueueSnackbar } from 'notistack';
 
 // Definição dos tipos para os erros de formulário
 interface FormErrors {
@@ -29,7 +30,7 @@ const Footer: React.FC = () => {
     // Reset dos erros
     setErrors({});
 
-    let newErrors: FormErrors = {};
+    const newErrors: FormErrors = {};
     if (!name) newErrors.name = 'O nome é obrigatório.';
     if (!email) newErrors.email = 'O e-mail é obrigatório.';
     else if (!/\S+@\S+\.\S+/.test(email)) newErrors.email = 'O e-mail não é válido.';
@@ -41,8 +42,27 @@ const Footer: React.FC = () => {
       return;
     }
 
-    // Submissão do formulário (substitua este alert por uma chamada de API ou outra lógica de envio)
-    alert('Formulário enviado com sucesso!');
+    // Submissão do formulário (substitua este enqueueSnackbar por uma chamada de API ou outra lógica de envio)
+    enqueueSnackbar('Formulário enviado com sucesso!', {
+      variant: 'success', // Tipo da mensagem (success, error, warning, info)
+      autoHideDuration: 2000, // Duração da exibição em milissegundos (3 segundos)
+      anchorOrigin: {
+        vertical: 'top',  // Posição vertical (top ou bottom)
+        horizontal: 'right', // Posição horizontal (left, center ou right)
+      },
+      content: () => (
+        <div style={{
+          backgroundColor: 'rgb(14, 14, 14)', 
+          color: 'white', 
+          padding: '10px',
+          border: "1px solid rgb(0, 173, 111)",
+          borderRadius: "5px"
+        }}>
+          Formulário enviado com sucesso!
+        </div>
+      ),
+    });
+
   };
 
   return (

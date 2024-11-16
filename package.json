@@ -14,8 +14,11 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
     "@mui/material": "^5.16.6",
+    "framer-motion": "^11.11.17",
+    "notistack": "^3.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.13.1",
     "styled-components": "^6.1.12",
     "vercel": "^35.2.3"
   },
